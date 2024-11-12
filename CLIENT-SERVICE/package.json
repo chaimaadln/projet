@@ -1,0 +1,14 @@
+{
+    "name": "client-service",
+    "version": "1.0.0",
+    "description": "Service de gestion des clients",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.21.1"
+    },
+    "author": "",
+    "license": "ISC"
+}

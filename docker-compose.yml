@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  client-service:
+    build: ./client-service
+    container_name: client-service
+    ports:
+      - "3000:3000"
+
+  task-service:
+    build: ./task-service
+    container_name: task-service
+    ports:
+      - "3001:3001"
+    depends_on:
+      - client-service
